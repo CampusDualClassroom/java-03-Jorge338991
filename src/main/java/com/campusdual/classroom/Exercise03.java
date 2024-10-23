@@ -20,7 +20,9 @@ public class Exercise03 {
     // Tiene que comprobar si el usuario que recibe por parámetro es "Sebas" y su contraseña es "sebas01".
     // Si es correcto, que muestre el mensaje de la función greetings() y si no que muestre el mensaje de la función error()
     public static void checkUser(String user, String pass) {
-        if ("Sebas".equals(user) && pass.equals("sebas01")) {
+        String userOk = "Sebas";
+        String passOk = "sebas01";
+        if (userOk.equals(user) && passOk.equals(pass)) {
             System.out.println(greetings(user));
         } else {
             System.out.println(error("Sebas"));
@@ -29,7 +31,7 @@ public class Exercise03 {
 
 
     public static void main(String[] args) {
-        checkUser("Sebas", "sebas01");
-        checkUser("Sebas2", "sebas02");
+
+
     }
 }
