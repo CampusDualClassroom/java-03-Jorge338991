@@ -25,13 +25,15 @@ public class Exercise03 {
         if (userOk.equals(user) && passOk.equals(pass)) {
             System.out.println(greetings(user));
         } else {
-            System.out.println(error("Sebas"));
+            System.out.println(error(userOk));
         }
     }
 
 
     public static void main(String[] args) {
 
+        checkUser("Sebas", "sebas01");
+        checkUser("Sebas2", "sebas02");
 
     }
 }
